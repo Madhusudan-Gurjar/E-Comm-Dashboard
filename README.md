@@ -1,7 +1,7 @@
 # 🛒 E-Comm Dashboard
 
 ## 📌 Overview
-The **E-Comm Dashboard** is a full-stack e-commerce management system that enables users to manage products efficiently. It features authentication, product management, and secure API access using JWT.
+The **E-Comm Dashboard** is a  full-stack e-commerce management system built with React.js and Express.js, featuring user authentication, product management, and secure API access. It allows users to efficiently manage products with CRUD operations and search functionality. It features authentication, product management, and secure API access using JWT.🚀
 
 ## 🚀 Features
 ### **🖥️ Backend (Express.js & MongoDB)**
