@@ -1,4 +1,3 @@
-# E-Comm-Dashboard
 # 🛒 E-Comm Dashboard
 
 ## 📌 Overview
