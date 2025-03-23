@@ -10,7 +10,9 @@ const User = require("./db/User");
 const Product = require("./db/Product");
 const PORT = process.env.PORT || 5000;
 const Jwt = require('jsonwebtoken');
-const jwtKey = 'e-comm';
+// const jwtKey = 'e-comm';
+const jwtKey = process.env.JWT_SECRET;
+
 
 const app = express();
 
