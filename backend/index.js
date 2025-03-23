@@ -1,9 +1,14 @@
+
+require('dotenv').config();
+require('./db/config');
+ // Ensure config.js is loaded after dotenv
+
 const express = require('express');
 const cors = require("cors");
-require('./db/config');
+// require('./db/config');
 const User = require("./db/User");
 const Product = require("./db/Product");
-
+const PORT = process.env.PORT || 5000;
 const Jwt = require('jsonwebtoken');
 const jwtKey = 'e-comm';
 
@@ -118,4 +123,4 @@ function verifyToken(req,resp,next){
     
 }
 
-app.listen(5000);
+app.listen(PORT);
