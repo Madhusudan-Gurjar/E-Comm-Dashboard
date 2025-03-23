@@ -11,7 +11,7 @@ import { Link,} from "react-router-dom";
     },[])
 
     const getProducts=async()=>{
-        let result = await fetch('http://localhost:5000/products',{
+        let result = await fetch(`${process.env.REACT_APP_API_URL}/products`,{
             headers:{
                 authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
             }
@@ -21,7 +21,7 @@ import { Link,} from "react-router-dom";
     }
 
     const deleteProduct=async(id)=>{
-        let result = await fetch(`http://localhost:5000/product/${id}`,{
+        let result = await fetch(`${process.env.REACT_APP_API_URL}/product/${id}`,{
         method: 'Delete',
         headers:{
             authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
@@ -39,7 +39,7 @@ const searchHandle= async (event)=>{
     
     let key = event.target.value;
     if(key){
-    let result = await fetch(`http://localhost:5000/search/${key}`,{
+    let result = await fetch(`${process.env.REACT_APP_API_URL}/search/${key}`,{
         headers:{
             authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
         }
