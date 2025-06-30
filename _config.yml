@@ -1,0 +1,29 @@
+# Jekyll configuration file
+
+# Exclude folders that contain raw JavaScript packages or node-based files
+exclude:
+  - node_modules
+  - backend/node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - README.md
+  - LICENSE
+  - .github
+  - .vscode
+  - .idea
+  - tmp
+  - logs
+  - test
+  - coverage
+
+# Optional: URL and base path
+# url: "https://your-username.github.io"
+# baseurl: "/your-repo-name"
+
+# If using GitHub Pages
+markdown: kramdown
+theme: jekyll-theme-primer
